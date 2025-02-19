@@ -6,14 +6,8 @@
 # string_bits('Hi') → 'H'
 # string_bits('Heeololeo') → 'Hello'
 
-
 def string_bits(str):
-    result = ""
-    for i in range(len(str)):
-        if i % 2 == 0:
-            result += str[i]
-    return result
- 
+    return str[::2]
 
-if __name__ == '__main__':
-    string_bits("")
+if __name__ == "__main__":
+    print("Enter a string:")
