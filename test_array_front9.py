@@ -22,7 +22,7 @@ class TestArrayFront9(unittest.TestCase):
         except AssertionError as e:
 
             print(f"Assertion(s) has Failed.{e}")
-
-
+#Assertion is failing
+#looping yet to be fixed.
 if __name__  ==  "__main__":
     unittest.main()
