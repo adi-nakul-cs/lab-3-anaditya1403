@@ -4,3 +4,14 @@
 # last2('hixxhi') → 1
 # last2('xaxxaxaxx') → 1
 # last2('axxxaaxx') → 2
+
+
+def last2(str):
+    if len(str) < 2:
+        return None 
+    lasttwo = str[-2:]
+    count = 0
+    for i in range(len(str) - 2):
+        if str[i:i+2] == lasttwo:
+            count += 1
+    return count
